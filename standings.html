@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/KpxvD3FL/rlst-renkli-png.png">
     <link rel="stylesheet" href="css/global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Bracket & Swiss Özel Stilleri */
         .bracket-scroll { overflow-x: auto; padding-bottom: 1.5rem; cursor: grab; }
@@ -106,7 +107,7 @@
 
     <!-- NAVIGASYON -->
     <nav class="relative z-10 max-w-6xl mx-auto flex justify-center gap-1 md:gap-6 mb-8 mt-4 border-b border-slate-800/60 pb-3 px-4 w-full overflow-x-auto no-scrollbar select-none">
-        <a href="index.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-chart-pie md:mr-1.5 text-blue-400"></i><span>Ana Sayfa</span></a>
+        <a href="index.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-house-chimney md:mr-1.5 text-blue-400"></i><span>Ana Sayfa</span></a>
         <a href="players.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-users md:mr-1.5 text-emerald-400"></i><span>Oyuncular</span></a>
         <a href="teams.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-shield-halved md:mr-1.5 text-purple-400"></i><span>Takımlar</span></a>
         <a href="standings.html" class="nav-link active px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-table-list md:mr-1.5 text-amber-400"></i><span>Sıralama & Bracket</span></a>
@@ -114,6 +115,11 @@
     </nav>
 
     <main class="relative z-10 max-w-[1400px] mx-auto w-full px-4 flex-grow select-none pb-12">
+
+        <div class="table-responsive">
+            <table class="standings-table">
+            </table>
+        </div>
         
         <!-- DİNAMİK PUAN DURUMU & SWISS ALANI -->
         <div id="standings-container" class="mb-12">
