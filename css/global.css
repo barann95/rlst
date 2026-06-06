@@ -1,0 +1,212 @@
+/* css/global.css */
+
+:root {
+    --glow-blue: rgba(0, 153, 255, 0.35);
+    --glow-red: rgba(255, 31, 55, 0.35);
+    --glow-amber: rgba(255, 170, 0, 0.35);
+    --bg-deep: #0a0c12;
+    --bg-card: #11161f;
+    --border-muted: rgba(255,255,255,0.06);
+    --accent-blue: #0099FF;
+    --accent-red: #ff1f37;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-deep);
+    color: #e2e8f0;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Arka Plan Izgarası */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Atmosferik Parlamalar */
+.ambient-glow-1 {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,153,255,0.06) 0%, transparent 70%);
+    top: -200px;
+    left: -200px;
+    z-index: 0;
+    pointer-events: none;
+    animation: ambientFloat1 20s ease-in-out infinite;
+}
+
+.ambient-glow-2 {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,31,55,0.05) 0%, transparent 70%);
+    bottom: -150px;
+    right: -150px;
+    z-index: 0;
+    pointer-events: none;
+    animation: ambientFloat2 25s ease-in-out infinite;
+}
+
+@keyframes ambientFloat1 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+    33% { transform: translate(80px, 60px) scale(1.1); opacity: 0.8; }
+    66% { transform: translate(-40px, 100px) scale(0.9); opacity: 0.5; }
+}
+
+@keyframes ambientFloat2 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.5; }
+    33% { transform: translate(-60px, -80px) scale(1.15); opacity: 0.7; }
+    66% { transform: translate(50px, -30px) scale(0.85); opacity: 0.4; }
+}
+
+/* Tipografi ve Fontlar */
+h1, h2, h3, h4, .esport-font {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+.esport-light { font-weight: 500; }
+.esport-bold { font-weight: 800; }
+.esport-black { font-weight: 900; }
+
+/* Glow Efektleri */
+.glow-blue { text-shadow: 0 0 20px rgba(0,153,255,0.4), 0 0 40px rgba(0,153,255,0.15); }
+.glow-red { text-shadow: 0 0 20px rgba(255,31,55,0.4), 0 0 40px rgba(255,31,55,0.15); }
+
+/* Glassmorphism Kartları */
+.glass-card {
+    background: linear-gradient(165deg, rgba(17,22,31,0.85) 0%, rgba(10,12,18,0.95) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.glass-card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+    border-color: rgba(0,153,255,0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0,153,255,0.08), 0 8px 32px rgba(0,0,0,0.4);
+}
+
+.glow-border {
+    position: relative;
+}
+
+.glow-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(0,153,255,0.2), transparent 40%, transparent 60%, rgba(255,31,55,0.2));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Navigasyon Linkleri */
+.nav-link {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    position: relative;
+    transition: all 0.3s ease;
+}
+@media (min-width: 768px) { .nav-link { font-size: 1.3rem; } }
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #0099FF, #ff1f37, transparent);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 999px;
+}
+.nav-link:hover { color: #cbd5e1; }
+.nav-link.active { color: #ffffff; }
+.nav-link.active::after { width: 80%; }
+
+/* Canlı Rozeti */
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: linear-gradient(135deg, #e00000, #990000);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 12px rgba(239,68,68,0.4);
+}
+
+.live-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+    animation: livePulse 1.2s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(0.7); }
+}
+
+/* Yüklenme Ekranı */
+.loading-screen {
+    position: fixed; inset: 0; background: var(--bg-deep); z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 1.5rem;
+    transition: opacity 0.6s ease;
+}
+.loading-screen.hidden-loader { opacity: 0; pointer-events: none; }
+
+.loader-ring {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,153,255,0.1);
+    border-top-color: #0099FF;
+    animation: spin 1s cubic-bezier(0.6, 0.2, 0.4, 0.8) infinite;
+    box-shadow: 0 0 30px rgba(0,153,255,0.15);
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loader-pulse { animation: pulseText 1.5s ease-in-out infinite; }
+@keyframes pulseText { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+
+/* Diğer Ortak Öğeler */
+.stat-item {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 8px;
+    padding: 0.3rem 0.4rem;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.stat-item:hover { background: rgba(0,153,255,0.05); border-color: rgba(0,153,255,0.1); }
+.cut-line { border-top: 2px dashed rgba(239, 68, 68, 0.2) !important; }
+.eliminated-row { opacity: 0.45; }
