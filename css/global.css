@@ -210,3 +210,34 @@ h1, h2, h3, h4, .esport-font {
 .stat-item:hover { background: rgba(0,153,255,0.05); border-color: rgba(0,153,255,0.1); }
 .cut-line { border-top: 2px dashed rgba(239, 68, 68, 0.2) !important; }
 .eliminated-row { opacity: 0.45; }
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* İçerik taşarsa yatay scroll bar çıkarır */
+    -webkit-overflow-scrolling: touch; /* Mobilde daha akıcı kaydırma sağlar */
+}
+
+/* Tablonun genel stilini koruması için */
+.standings-table {
+    width: 100%;
+    min-width: 600px; /* Tablonun çok fazla sıkışmasını engeller */
+    border-collapse: collapse;
+}
+
+/* Masaüstü görünümü (yan yana 3'lü veya 4'lü kartlar) */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-card {
+    width: calc(33.333% - 20px); /* 3 sütunlu yapı */
+}
+
+/* Telefonlar ve Tabletler için Mobil Görünüm (768px ve altı) */
+@media screen and (max-width: 768px) {
+    .team-card {
+        width: 100%; /* Kartlar mobilde ekranı tam kaplar ve alt alta dizilir */
+    }
+}
