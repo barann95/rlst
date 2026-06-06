@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RLST | Oyuncular Veritabanı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/KpxvD3FL/rlst-renkli-png.png">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <div class="loading-screen" id="loader">
+        <div class="loader-ring"></div>
+        <p class="esport-font text-xl text-white tracking-[0.3em] loader-pulse">YÜKLENİYOR</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="relative z-10 max-w-7xl mx-auto px-4 pt-4 pb-2 w-full">
+        <div class="grid grid-cols-3 items-center">
+            <div class="flex justify-start">
+                <a href="index.html" class="inline-block transition-all duration-300 hover:scale-110 group">
+                    <img src="https://i.ibb.co/KpxvD3FL/rlst-renkli-png.png" alt="RLST" class="w-16 lg:w-20 h-auto object-contain drop-shadow-[0_0_20px_rgba(196,4,25,0.5)]">
+                </a>
+            </div>
+            <div class="text-center">
+                <h1 class="select-none leading-none">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 glow-blue font-black tracking-[0.2em] text-sm lg:text-base block">ROCKET LEAGUE</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#c20015] via-[#de0018] to-[#ba233f] glow-red font-black tracking-[0.12em] text-3xl lg:text-4xl block">SERIES TÜRKİYE</span>
+                </h1>
+                <p class="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-medium mt-0.5">Oyuncu Veritabanı</p>
+            </div>
+            <div class="flex justify-end gap-2"></div>
+        </div>
+    </header>
+
+    <!-- MULTI-PAGE NAVIGATION (Active: Oyuncular) -->
+    <nav class="relative z-10 max-w-6xl mx-auto flex justify-center gap-1 md:gap-6 mb-8 border-b border-slate-800/60 pb-3 px-4 w-full overflow-x-auto no-scrollbar select-none">
+        <a href="index.html" class="nav-link px-3 py-2 uppercase tracking-wide">
+            <i class="fa-solid fa-chart-pie md:mr-1.5 text-blue-400"></i><span>Ana Panel</span>
+        </a>
+        <a href="players.html" class="nav-link active px-3 py-2 uppercase tracking-wide">
+            <i class="fa-solid fa-users md:mr-1.5 text-emerald-400"></i><span>Oyuncular</span>
+        </a>
+        <a href="teams.html" class="nav-link px-3 py-2 uppercase tracking-wide">
+            <i class="fa-solid fa-shield-halved md:mr-1.5 text-purple-400"></i><span>Takımlar</span>
+        </a>
+        <a href="standings.html" class="nav-link px-3 py-2 uppercase tracking-wide">
+            <i class="fa-solid fa-table-list md:mr-1.5 text-amber-400"></i><span>Sıralama & Bracket</span>
+        </a>
+    </nav>
+
+    <main class="relative z-10 max-w-7xl mx-auto w-full px-4 flex-grow mb-12 select-none">
+        <!-- Arama ve Filtreleme -->
+        <div class="glass-card rounded-2xl p-4 md:p-6 mb-6 flex flex-col md:flex-row gap-4 items-center justify-between border border-slate-700/40">
+            <h2 class="esport-font text-2xl font-black uppercase text-white tracking-wider flex items-center gap-3">
+                <i class="fa-solid fa-globe text-emerald-400"></i> Transfer Pazarı
+            </h2>
+            <div class="relative w-full md:w-96">
+                <i class="fa-solid fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-500"></i>
+                <input type="text" id="player-search" placeholder="Oyuncu veya Takım Ara..." class="w-full bg-slate-900/60 border border-slate-600/50 text-slate-200 text-sm rounded-xl pl-11 pr-4 py-3 focus:outline-none focus:border-emerald-500/70 transition-all">
+            </div>
+        </div>
+
+        <!-- Oyuncular Grid'i -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="players-container">
+            <!-- Dinamik olarak js/page-players.js ile doldurulacak -->
+        </div>
+    </main>
+
+    <footer class="relative z-10 mt-auto pt-8 pb-6 text-center select-none bg-slate-950/20 border-t border-slate-900">
+        <p class="text-slate-600 text-xs font-medium tracking-wider"><i class="fa-regular fa-copyright"></i> 2026 RLST Organizasyonu</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script src="js/page-players.js"></script>
+</body>
+</html>
