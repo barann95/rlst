@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Series Türkiye | Fikstür</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/KpxvD3FL/rlst-renkli-png.png">
+    <link rel="stylesheet" href="css/global.css">
+    <style>
+        .match-card {
+            background: linear-gradient(180deg, rgba(20, 28, 45, 0.95) 0%, rgba(12, 16, 22, 1) 100%);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+            border-radius: 12px;
+            transition: all 0.25s ease;
+        }
+        .match-card:hover {
+            border-color: rgba(0, 153, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0, 153, 255, 0.08);
+        }
+        .match-card.group-b-card:hover {
+            border-color: rgba(251, 146, 60, 0.3);
+            box-shadow: 0 8px 32px rgba(251, 146, 60, 0.08);
+        }
+        .week-btn {
+            transition: all 0.2s ease;
+        }
+        .week-btn.active {
+            background: linear-gradient(135deg, rgba(0, 153, 255, 0.25), rgba(0, 100, 200, 0.15));
+            border-color: rgba(0, 153, 255, 0.5);
+            color: white;
+            box-shadow: 0 0 15px rgba(0, 153, 255, 0.2);
+        }
+        .score-box {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1;
+            min-width: 2.5rem;
+            text-align: center;
+        }
+        .mvp-badge {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(245, 158, 11, 0.08));
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+        .winner-team { opacity: 1; }
+        .loser-team { opacity: 0.45; }
+        .team-logo-wrap {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid rgba(255,255,255,0.08);
+            background: rgba(15,23,42,0.8);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .detail-panel {
+            display: none;
+            border-top: 1px solid rgba(51,65,85,0.4);
+        }
+        .detail-panel.open { display: block; }
+        .group-tag-a {
+            background: rgba(0, 153, 255, 0.12);
+            border: 1px solid rgba(0, 153, 255, 0.25);
+            color: #60a5fa;
+        }
+        .group-tag-b {
+            background: rgba(251, 146, 60, 0.12);
+            border: 1px solid rgba(251, 146, 60, 0.25);
+            color: #fb923c;
+        }
+        .filter-btn.active {
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+        .stat-pill {
+            background: rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 6px;
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            font-family: 'Rajdhani', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <div class="loading-screen" id="loader">
+        <div class="loader-ring"></div>
+        <p class="esport-font text-xl text-white tracking-[0.3em] loader-pulse">YÜKLENİYOR</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="relative z-10 max-w-7xl mx-auto px-4 pt-4 pb-2 w-full">
+        <div class="grid grid-cols-2 md:grid-cols-3 items-center gap-4">
+            <div class="flex justify-start">
+                <a href="index.html" class="inline-block transition-all duration-300 hover:scale-110">
+                    <img src="https://i.ibb.co/KpxvD3FL/rlst-renkli-png.png" alt="RLST" class="w-14 md:w-20 h-auto object-contain drop-shadow-[0_0_20px_rgba(196,4,25,0.5)]">
+                </a>
+            </div>
+            <div class="hidden md:block text-center">
+                <h1 class="select-none leading-none">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 glow-blue font-black tracking-[0.2em] text-sm lg:text-base block">ROCKET LEAGUE</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#c20015] via-[#de0018] to-[#ba233f] glow-red font-black tracking-[0.12em] text-3xl lg:text-4xl block">SERIES TÜRKİYE</span>
+                </h1>
+                <p class="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-medium mt-0.5">Türkiyenin Rocket League Organizasyonu</p>
+            </div>
+            <div class="flex justify-end items-center gap-4">
+                <div class="hidden lg:flex items-center gap-3 mr-2">
+                    <a href="https://www.instagram.com/rlseriesturkiye/" target="_blank" class="text-slate-500 hover:text-pink-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                    <a href="https://discord.gg/y5rt7zecJp" target="_blank" class="text-slate-500 hover:text-indigo-400 transition-colors"><i class="fa-brands fa-discord text-lg"></i></a>
+                    <a href="https://www.youtube.com/@rlseriesturkiye" target="_blank" class="text-slate-500 hover:text-red-500 transition-colors"><i class="fa-brands fa-youtube text-lg"></i></a>
+                </div>
+                <div id="auth-container"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGASYON -->
+    <nav class="relative z-10 max-w-6xl mx-auto flex justify-center gap-1 md:gap-6 mb-6 mt-2 border-b border-slate-800/60 pb-3 px-4 w-full overflow-x-auto no-scrollbar select-none">
+        <a href="index.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-chart-pie md:mr-1.5 text-blue-400"></i><span>Ana Sayfa</span></a>
+        <a href="players.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-users md:mr-1.5 text-emerald-400"></i><span>Oyuncular</span></a>
+        <a href="teams.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-shield-halved md:mr-1.5 text-purple-400"></i><span>Takımlar</span></a>
+        <a href="standings.html" class="nav-link px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-table-list md:mr-1.5 text-amber-400"></i><span>Sıralama & Bracket</span></a>
+        <a href="fixture.html" class="nav-link active px-3 py-2 uppercase tracking-wide"><i class="fa-solid fa-calendar-days md:mr-1.5 text-sky-400"></i><span>Fikstür</span></a>
+    </nav>
+
+    <main class="relative z-10 max-w-5xl mx-auto w-full px-4 flex-grow pb-12 select-none">
+
+        <!-- SAYFA BAŞLIĞI -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+            <div>
+                <h2 class="esport-font text-4xl md:text-5xl font-black text-white uppercase tracking-wider">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-blue-500">Fikstür</span>
+                </h2>
+                <p class="text-slate-500 text-sm mt-1" id="fixture-subtitle">Tüm grup maçları ve sonuçları</p>
+            </div>
+            <!-- Sezon Seçici -->
+            <div class="flex gap-2">
+                <button onclick="changeSeason(1)" id="btn-s1" class="week-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border bg-slate-800/40 border-slate-700 text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-trophy mr-1.5 text-amber-500"></i> Sezon 1
+                </button>
+                <button onclick="changeSeason(2)" id="btn-s2" class="week-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border bg-slate-800/40 border-slate-700 text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-bolt mr-1.5 text-blue-400"></i> Sezon 2
+                </button>
+            </div>
+        </div>
+
+        <!-- HAFTA SEÇİCİ + FİLTRE -->
+        <div class="glass-card rounded-2xl p-4 border border-slate-700/40 mb-6">
+            <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+                <!-- Hafta Seçici -->
+                <div class="flex items-center gap-2 flex-wrap" id="week-tabs">
+                    <!-- JS ile doldurulacak -->
+                </div>
+                <!-- Grup Filtresi -->
+                <div class="flex gap-2 shrink-0">
+                    <button onclick="setGroupFilter('all')" id="filter-all" class="filter-btn active text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg border border-slate-700 text-slate-400 transition-all">Tümü</button>
+                    <button onclick="setGroupFilter('A')" id="filter-a" class="filter-btn text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg border border-slate-700 text-slate-400 transition-all">Grup A</button>
+                    <button onclick="setGroupFilter('B')" id="filter-b" class="filter-btn text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg border border-slate-700 text-slate-400 transition-all">Grup B</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ÖZET STATS BANDI -->
+        <div id="week-stats-bar" class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6"></div>
+
+        <!-- MAÇ LİSTESİ -->
+        <div id="matches-container" class="flex flex-col gap-3">
+            <!-- JS ile doldurulacak -->
+        </div>
+
+        <!-- BOŞ DURUM -->
+        <div id="empty-state" class="hidden text-center py-16">
+            <i class="fa-regular fa-calendar-xmark text-5xl text-slate-700 mb-4 block"></i>
+            <p class="text-slate-500 font-medium">Bu haftaya ait maç bulunmuyor.</p>
+        </div>
+
+    </main>
+
+    <footer class="relative z-10 mt-auto pt-8 pb-6 text-center select-none bg-slate-950/20 border-t border-slate-900">
+        <p class="text-slate-600 text-xs font-medium tracking-wider"><i class="fa-regular fa-copyright"></i> 2026 RLST Organizasyonu</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/page-fixture.js"></script>
+</body>
+</html>
