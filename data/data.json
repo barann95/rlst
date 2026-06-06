@@ -1,0 +1,275 @@
+{
+  "seasons": {
+    "1": {
+      "active": true,
+      "subtitle": "RLST SEZON 1",
+      "teamOfTheDay": {
+        "show": true,
+        "name": "Mudanya BarberHood",
+        "description": "Mudanya Barberhood takımı, sezon boyunca gösterdiği üstün performansla dikkat çekiyor.",
+        "mvp": "ryasuha",
+        "stat": "5 Galibiyet"
+      },
+      "groupA": [
+        {
+          "name": "Kolacity",
+          "logo": "https://i.ibb.co/nM9cCqLn/cc6df626-9c59-4140-b1f6-a9e055b794ef-Allynow.png",
+          "O": 5, "G": 3, "M": 2, "AG": 21, "YG": 16,
+          "players": [
+            { "name": "dawaka.", "goals": 6, "assists": 5, "saves": 6, "score": 2020, "rank": "Grand Champion II" },
+            { "name": "broxy._.", "goals": 3, "assists": 1, "saves": 1, "score": 644, "rank": "Grand Champion I" },
+            { "name": "Allynow", "goals": 9, "assists": 1, "saves": 4, "score": 1879, "rank": "Grand Champion I" },
+            { "name": "Pemirhan.", "goals": 0, "assists": 1, "saves": 3, "score": 345, "rank": "Champion III" }
+          ]
+        },
+        {
+          "name": "Team Vantage",
+          "logo": "https://i.ibb.co/ZRPYzNd5/MG-20260523-215611-Kerem-Erdo-an.jpg",
+          "O": 5, "G": 5, "M": 0, "AG": 34, "YG": 8,
+          "players": [
+            { "name": "Krewzyy?", "goals": 22, "assists": 7, "saves": 10, "score": 4751, "rank": "Supersonic Legend" },
+            { "name": "ErroRL.", "goals": 6, "assists": 3, "saves": 1, "score": 1352, "rank": "Grand Champion III" },
+            { "name": "WasdN?", "goals": 1, "assists": 2, "saves": 4, "score": 1884, "rank": "Grand Champion I" }
+          ]
+        },
+        {
+          "name": "Panthera",
+          "logo": "https://i.ibb.co/gbgYcT4X/inbound586810950964648816.jpg",
+          "O": 5, "G": 2, "M": 3, "AG": 19, "YG": 19,
+          "players": [
+            { "name": "SSSHADOWW_", "goals": 6, "assists": 1, "saves": 8, "score": 1977, "rank": "Diamond II" },
+            { "name": "Ömer Bey78", "goals": 1, "assists": 1, "saves": 1, "score": 337, "rank": "Platinum III" },
+            { "name": "cRsTls", "goals": 3, "assists": 1, "saves": 3, "score": 968, "rank": "Platinum III" },
+            { "name": "YT THE KADİR", "goals": 1, "assists": 0, "saves": 3, "score": 429, "rank": "Diamond I" }
+          ]
+        },
+        {
+          "name": "Nova Blaze",
+          "logo": "https://i.ibb.co/Z1Rj9j9m/inbound78621551875596004.webp",
+          "O": 5, "G": 4, "M": 1, "AG": 18, "YG": 6,
+          "players": [
+            { "name": "Nixswordtt", "goals": 4, "assists": 2, "saves": 5, "score": 1305, "rank": "Diamond II" },
+            { "name": "Rayan_cherki", "goals": 3, "assists": 2, "saves": 4, "score": 1126, "rank": "Champion I" },
+            { "name": "Carrypotter33", "goals": 4, "assists": 2, "saves": 3, "score": 1205, "rank": "Grand Champion II" },
+            { "name": "Dapebb", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Grand Champion I" }
+          ]
+        },
+        {
+          "name": "Deadzone",
+          "logo": "https://i.ibb.co/qYKY1dnB/inbound7389307754067513817-Zeydan-Ayd-n.jpg",
+          "O": 5, "G": 0, "M": 5, "AG": 0, "YG": 30,
+          "players": [
+            { "name": "Im-Lowny_", "goals": 0, "assists": 0, "saves": 3, "score": 239, "rank": "Champion I" },
+            { "name": "Zyrox_rl1", "goals": 0, "assists": 0, "saves": 2, "score": 258, "rank": "Diamond III" },
+            { "name": "mfcbey33", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Diamond III" },
+            { "name": "Whiskyvortenix", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Diamond III" }
+          ]
+        },
+        {
+          "name": "Aether Esports",
+          "logo": "https://i.ibb.co/rj6Qs8X/Ekran-g-r-nt-s-2026-05-07-175620-mer-Erik.png",
+          "O": 5, "G": 0, "M": 5, "AG": 8, "YG": 30,
+          "players": [
+            { "name": "Krexor_", "goals": 3, "assists": 0, "saves": 4, "score": 1266, "rank": "Diamond III" },
+            { "name": "Timuu_", "goals": 0, "assists": 1, "saves": 0, "score": 546, "rank": "Diamond III" },
+            { "name": "Kplntunc", "goals": 2, "assists": 0, "saves": 0, "score": 402, "rank": "Diamond III" }
+          ]
+        }
+      ],
+      "groupB": [
+        {
+          "name": "Zenith Esports",
+          "logo": "https://i.ibb.co/j9G5pwzQ/8-ABE9-C45-A1-C5-402-A-9685-34-A261-C9-C618-Ersin-Ya-ar-Atabay.jpg",
+          "O": 5, "G": 4, "M": 1, "AG": 26, "YG": 14,
+          "players": [
+            { "name": "Atabayinho", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Champion II" },
+            { "name": "ImUnique", "goals": 1, "assists": 1, "saves": 4, "score": 594, "rank": "Champion I" },
+            { "name": "Uc11", "goals": 10, "assists": 3, "saves": 2, "score": 2060, "rank": "Grand Champion II" },
+            { "name": "Wreax Kbm Demon", "goals": 5, "assists": 1, "saves": 4, "score": 1131, "rank": "Grand Champion I" }
+          ]
+        },
+        {
+          "name": "Umutül Kurban FK",
+          "logo": "https://i.ibb.co/GQgB90sL/Copilot-20260525-211956-Eymen-Esme.png",
+          "O": 5, "G": 2, "M": 3, "AG": 15, "YG": 26,
+          "players": [
+            { "name": "WQERQ", "goals": 4, "assists": 1, "saves": 0, "score": 641, "rank": "Platinum II" },
+            { "name": "denizhan4ever", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Diamond III" },
+            { "name": "Ryunhyun", "goals": 3, "assists": 2, "saves": 0, "score": 675, "rank": "Champion III" },
+            { "name": "bediringoo", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Platinum III" }
+          ]
+        },
+        {
+          "name": "Street Wear",
+          "logo": "https://i.ibb.co/zWG70dRq/704613848-885200057925155-9030739935588347061-n.jpg",
+          "O": 5, "G": 0, "M": 5, "AG": 3, "YG": 28,
+          "players": [
+            { "name": "Loki", "goals": 2, "assists": 0, "saves": 4, "score": 635, "rank": "Grand Champion I" },
+            { "name": "Hugo", "goals": 1, "assists": 1, "saves": 1, "score": 469, "rank": "Champion III" }
+          ]
+        },
+        {
+          "name": "Mudanya BarberHood",
+          "logo": "https://i.ibb.co/FkLXDjX1/x-Petrina-Jimenez.png",
+          "O": 5, "G": 5, "M": 0, "AG": 48, "YG": 5,
+          "players": [
+            { "name": "gosidibah", "goals": 12, "assists": 5, "saves": 2, "score": 2180, "rank": "Grand Champion I" },
+            { "name": "ryasuha", "goals": 22, "assists": 4, "saves": 3, "score": 3722, "rank": "Grand Champion II" },
+            { "name": "Ammar1nho", "goals": 9, "assists": 7, "saves": 2, "score": 2137, "rank": "Grand Champion III" }
+          ]
+        },
+        {
+          "name": "FC Aksakal Polia",
+          "logo": "https://i.ibb.co/ZzwZDztS/inbound9033407413019525052-Yasar-Sicanoglu.png",
+          "O": 5, "G": 3, "M": 2, "AG": 20, "YG": 23,
+          "players": [
+            { "name": "Vait_14", "goals": 3, "assists": 1, "saves": 1, "score": 450, "rank": "Champion I" },
+            { "name": "Yigitii23", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Diamond II" },
+            { "name": "karsli_19036", "goals": 3, "assists": 0, "saves": 2, "score": 631, "rank": "Diamond III" },
+            { "name": "ysff", "goals": 4, "assists": 4, "saves": 6, "score": 1198, "rank": "Champion I" }
+          ]
+        },
+        {
+          "name": "Team Visored",
+          "logo": "https://i.ibb.co/Kpj4DhHz/707012301-4385703274976054-3690363985320344883-n.jpg",
+          "O": 5, "G": 0, "M": 5, "AG": 2, "YG": 28,
+          "players": [
+            { "name": "Yusufali018", "goals": 1, "assists": 1, "saves": 0, "score": 346, "rank": "Platinum III" },
+            { "name": "Keisuke096", "goals": 1, "assists": 0, "saves": 0, "score": 214, "rank": "Platinum III" },
+            { "name": "Scarletytb", "goals": 0, "assists": 0, "saves": 0, "score": 0, "rank": "Gold II" }
+          ]
+        }
+      ],
+      "schedule": {
+        "1": [
+          { "time": "20:00", "group": "A", "t1": "Kolacity", "s1": "6", "t2": "Aether Esports", "s2": "2", "details": { "mvp": "Allynow", "scorers": { "Kolacity": ["broxy._. (3)","Allynow (3)"], "Aether Esports": ["Krexor_ (2)"] } } },
+          { "time": "20:00", "group": "B", "t1": "Zenith Esports", "s1": "8", "t2": "Team Visored", "s2": "2", "details": { "mvp": "Uc11", "scorers": { "Zenith Esports": ["Uc11 (5)","Wreax Kbm Demon (3)"], "Team Visored": ["Yusufali018 (1)","Keisuke096 (1)"] } } },
+          { "time": "20:00", "group": "A", "t1": "Team Vantage", "s1": "10", "t2": "Deadzone", "s2": "0", "details": { "mvp": "Krewzyy?", "scorers": { "Team Vantage": ["Krewzyy? (6)","WasdN? (4)"], "Deadzone": [] } } },
+          { "time": "20:00", "group": "B", "t1": "Umutül Kurban FK", "s1": "3", "t2": "FC Aksakal Polia", "s2": "4", "details": { "mvp": "karsli_19036", "scorers": { "Umutül Kurban FK": ["Ryunhyun (2)","WQERQ (1)"], "FC Aksakal Polia": ["karsli_19036 (3)","ysff (1)"] } } },
+          { "time": "20:00", "group": "A", "t1": "Panthera", "s1": "1", "t2": "Nova Blaze", "s2": "2", "details": { "mvp": "Rayan_cherki", "scorers": { "Panthera": ["cRsTls (1)"], "Nova Blaze": ["Rayan_cherki (2)"] } } },
+          { "time": "20:00", "group": "B", "t1": "Street Wear", "s1": "2", "t2": "Mudanya BarberHood", "s2": "6", "details": { "mvp": "ryasuha", "scorers": { "Street Wear": ["Loki (1)","Hugo (1)"], "Mudanya BarberHood": ["ryasuha (4)","Ammar1nho (2)"] } } }
+        ],
+        "2": [
+          { "time": "20:00", "group": "A", "t1": "Kolacity", "s1": "5", "t2": "Deadzone", "s2": "0", "details": { "mvp": "", "scorers": { "Kolacity": [], "Deadzone": [] } } },
+          { "time": "20:00", "group": "B", "t1": "Zenith Esports", "s1": "6", "t2": "FC Aksakal Polia", "s2": "5", "details": { "mvp": "Uc11", "scorers": { "Zenith Esports": ["ImUnique (1)","Uc11 (5)"], "FC Aksakal Polia": ["Vait_14 (2)","ysff (3)"] } } },
+          { "time": "20:00", "group": "A", "t1": "Aether Esports", "s1": "0", "t2": "Nova Blaze", "s2": "5", "details": { "mvp": "Nixswordtt", "scorers": { "Aether Esports": [], "Nova Blaze": ["Nixswordtt (4)","Rayan_cherki (1)"] } } },
+          { "time": "20:00", "group": "B", "t1": "Team Visored", "s1": "0", "t2": "Mudanya BarberHood", "s2": "5", "details": { "mvp": "", "scorers": { "Team Visored": [], "Mudanya BarberHood": [] } } },
+          { "time": "20:00", "group": "A", "t1": "Team Vantage", "s1": "7", "t2": "Panthera", "s2": "2", "details": { "mvp": "Krewzyy?", "scorers": { "Team Vantage": ["Krewzyy? (6)","WasdN? (1)"], "Panthera": ["SSSHADOWW_ (1)","Ömer Bey78 (1)"] } } },
+          { "time": "20:00", "group": "B", "t1": "Umutül Kurban FK", "s1": "7", "t2": "Street Wear", "s2": "1", "details": { "mvp": "Ryunhyun", "scorers": { "Umutül Kurban FK": ["Ryunhyun (3)","WQERQ (4)"], "Street Wear": ["Loki (1)"] } } }
+        ],
+        "3": [
+          { "time": "20:00", "group": "A", "t1": "Kolacity", "s1": "3", "t2": "Nova Blaze", "s2": "5", "details": { "mvp": "dawaka.", "scorers": { "Kolacity": ["dawaka. (3)"], "Nova Blaze": ["Carrypotter33 (3)"] } } },
+          { "time": "20:00", "group": "B", "t1": "Zenith Esports", "s1": "2", "t2": "Mudanya BarberHood", "s2": "7", "details": { "mvp": "ryasuha", "scorers": { "Zenith Esports": ["Wreax Kbm Demon (2)"], "Mudanya BarberHood": ["ryasuha (7)"] } } },
+          { "time": "20:00", "group": "A", "t1": "Deadzone", "s1": "0", "t2": "Panthera", "s2": "5", "details": { "mvp": "", "scorers": { "Deadzone": [], "Panthera": [] } } },
+          { "time": "20:00", "group": "B", "t1": "FC Aksakal Polia", "s1": "5", "t2": "Street Wear", "s2": "0", "details": { "mvp": "", "scorers": { "FC Aksakal Polia": [], "Street Wear": [] } } },
+          { "time": "20:00", "group": "A", "t1": "Aether Esports", "s1": "3", "t2": "Team Vantage", "s2": "9", "details": { "mvp": "Krewzyy?", "scorers": { "Aether Esports": [], "Team Vantage": ["Krewzyy? (4)","ErroRL. (5)"] } } },
+          { "time": "20:00", "group": "B", "t1": "Team Visored", "s1": "0", "t2": "Umutül Kurban FK", "s2": "5", "details": { "mvp": "", "scorers": { "Team Visored": [], "Umutül Kurban FK": [] } } }
+        ],
+        "4": [
+          { "time": "20:00", "group": "A", "t1": "Kolacity", "s1": "7", "t2": "Panthera", "s2": "3", "details": { "mvp": "Allynow", "scorers": { "Kolacity": [], "Panthera": [] } } },
+          { "time": "20:00", "group": "B", "t1": "Zenith Esports", "s1": "5", "t2": "Street Wear", "s2": "0", "details": { "mvp": "", "scorers": { "Zenith Esports": [], "Street Wear": [] } } },
+          { "time": "20:00", "group": "A", "t1": "Nova Blaze", "s1": "1", "t2": "Team Vantage", "s2": "2", "details": { "mvp": "ErroRL.", "scorers": { "Nova Blaze": [], "Team Vantage": [] } } },
+          { "time": "20:00", "group": "B", "t1": "Mudanya BarberHood", "s1": "16", "t2": "Umutül Kurban FK", "s2": "0", "details": { "mvp": "ryasuha", "scorers": { "Mudanya BarberHood": [], "Umutül Kurban FK": [] } } },
+          { "time": "20:00", "group": "A", "t1": "Deadzone", "s1": "0", "t2": "Aether Esports", "s2": "0", "details": { "mvp": "", "scorers": { "Deadzone": [], "Aether Esports": [] } } },
+          { "time": "20:00", "group": "B", "t1": "FC Aksakal Polia", "s1": "5", "t2": "Team Visored", "s2": "0", "details": { "mvp": "", "scorers": { "FC Aksakal Polia": [], "Team Visored": [] } } }
+        ],
+        "5": [
+          { "time": "20:00", "group": "A", "t1": "Kolacity", "s1": "2", "t2": "Team Vantage", "s2": "6", "details": { "mvp": "Krewzyy?", "scorers": { "Kolacity": [], "Team Vantage": [] } } },
+          { "time": "20:00", "group": "B", "t1": "Zenith Esports", "s1": "5", "t2": "Umutül Kurban FK", "s2": "0", "details": { "mvp": "", "scorers": { "Zenith Esports": [], "Umutül Kurban FK": [] } } },
+          { "time": "20:00", "group": "A", "t1": "Panthera", "s1": "5", "t2": "Aether Esports", "s2": "3", "details": { "mvp": "", "scorers": { "Panthera": [], "Aether Esports": [] } } },
+          { "time": "20:00", "group": "B", "t1": "Street Wear", "s1": "0", "t2": "Team Visored", "s2": "0", "details": { "mvp": "", "scorers": { "Street Wear": [], "Team Visored": [] } } },
+          { "time": "20:00", "group": "A", "t1": "Nova Blaze", "s1": "5", "t2": "Deadzone", "s2": "0", "details": { "mvp": "", "scorers": { "Nova Blaze": [], "Deadzone": [] } } },
+          { "time": "20:00", "group": "B", "t1": "Mudanya BarberHood", "s1": "14", "t2": "FC Aksakal Polia", "s2": "1", "details": { "mvp": "gosidibah", "scorers": { "Mudanya BarberHood": [], "FC Aksakal Polia": [] } } }
+        ]
+      },
+      "bracket": {
+        "upperR1": [
+          { "t1": "Nova Blaze", "s1": "-", "t2": "FC Aksakal Polia", "s2": "-" },
+          { "t1": "Zenith Esports", "s1": "-", "t2": "Kolacity", "s2": "-" }
+        ],
+        "upperSF": [
+          { "t1": "Team Vantage", "s1": "-", "t2": "Upper R1 M1 Galibi", "s2": "-" },
+          { "t1": "Mudanya BarberHood", "s1": "-", "t2": "Upper R1 M2 Galibi", "s2": "-" }
+        ],
+        "upperFinal": [
+          { "t1": "Upper SF M1 Galibi", "s1": "-", "t2": "Upper SF M2 Galibi", "s2": "-" }
+        ],
+        "lowerR1": [
+          { "t1": "Panthera", "s1": "-", "t2": "Upper R1 M1 Mağlubu", "s2": "-" },
+          { "t1": "Umutül Kurban FK", "s1": "-", "t2": "Upper R1 M2 Mağlubu", "s2": "-" }
+        ],
+        "lowerQF": [
+          { "t1": "Lower R1 M1 Galibi", "s1": "-", "t2": "Upper SF M1 Mağlubu", "s2": "-" },
+          { "t1": "Lower R1 M2 Galibi", "s1": "-", "t2": "Upper SF M2 Mağlubu", "s2": "-" }
+        ],
+        "lowerSF": [
+          { "t1": "Lower QF M1 Galibi", "s1": "-", "t2": "Lower QF M2 Galibi", "s2": "-" }
+        ],
+        "lowerFinal": [
+          { "t1": "Upper Final Mağlubu", "s1": "-", "t2": "Lower SF Galibi", "s2": "-" }
+        ],
+        "grandFinal": [
+          { "t1": "Upper Final Galibi", "s1": "-", "t2": "Lower Final Galibi", "s2": "-" }
+        ]
+      }
+    },
+    "2": {
+      "active": false,
+      "subtitle": "RLST SEZON 2",
+      "teamOfTheDay": { "show": false, "name": "", "description": "", "mvp": "", "stat": "" },
+      "groupA": [
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] }
+      ],
+      "groupB": [
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] },
+        { "name": "TBD", "logo": "", "O": 0, "G": 0, "M": 0, "AG": 0, "YG": 0, "players": [] }
+      ],
+      "schedule": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+      },
+      "bracket": {
+        "upperR1": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" },
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ],
+        "upperSF": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" },
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ],
+        "upperFinal": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ],
+        "lowerR1": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" },
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ],
+        "lowerQF": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" },
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ],
+        "lowerSF": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ],
+        "lowerFinal": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ],
+        "grandFinal": [
+          { "t1": "TBD", "s1": "-", "t2": "TBD", "s2": "-" }
+        ]
+      }
+    }
+  }
+}
