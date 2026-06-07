@@ -2,12 +2,12 @@
 
 // 1. KENDİ FİREBASE BİLGİLERİNİ BURAYA YAPIŞTIR
 const firebaseConfig = {
-  apiKey: "AIzaSyB6sDUuylUvzMKElurNjTtMRzobDTvXixg",
-  authDomain: "rlst-turkiye.firebaseapp.com",
-  projectId: "rlst-turkiye",
-  storageBucket: "rlst-turkiye.firebasestorage.app",
-  messagingSenderId: "450401561806",
-  appId: "1:450401561806:web:381ffe4eb7b4fe9653349f"
+  apiKey: "",
+  authDomain: "",
+  projectId: "-",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 let app, auth;
